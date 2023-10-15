@@ -1,0 +1,94 @@
+package heapStructure;
+
+public class Sandesh_HeapSort {
+
+//	public static void main(String[] args) {
+//		int[] array = {43,24,54,6,3,0,245,11,9};
+//		Sandesh_HeapSort hs = new Sandesh_HeapSort();
+//		hs.sort(array);
+//		
+//		hs.printArray(array);
+//	}
+//	void sort(int[] array) {
+//		int n = array.length;
+//		for(int i = n/2 -1;i>=0;i--) {
+//			heapify(array,n,i);
+//		}	
+//		for(int i = n-1;i>=0;i--) {
+//			int temp = array[0];
+//			array[0] = array[i];
+//			array[i] = temp;
+//			heapify(array,i,0);
+//		}
+//	}
+//	void heapify(int [] array ,int n, int i) {
+//		int largest = i;
+//		int li = 2*i + 1;
+//		int ri = 2*i + 2;
+//		if(li < n && array[li] > array[largest]) {
+//			largest = li;
+//		}
+//		if(ri < n && array[ri] > array[largest]) {
+//			largest = ri;
+//		}
+//		if(largest != i) {
+//			int temp = array[i];
+//			array[i] = array[largest];
+//			array[largest] = temp;
+//			heapify(array,n,largest);
+//		}
+//	}
+//	void printArray(int [] array) {
+//		for(int i = 0;i<array.length;i++) {
+//			System.out.print(array[i]+ " ");
+//		}
+//	}
+	
+	public static void maxHeap(int [ ] array) {
+		int n = array.length;
+		for (int i = n/2 -1; i >= 0;i--) {
+			maxheapify(array,n,i);
+		}
+		for(int i = n-1 ;i>=0;i--) {
+			int temp = array[0];
+			array[0] = array[i];
+			array[i] = temp;
+			maxheapify(array,i,0);
+		}
+	}
+	private static void maxheapify(int[] array, int n, int i) {
+		int largest = i;
+		int left = 2*i + 1;
+		int right = 2*i + 2;
+		
+		if(left < n && array[left] > array[largest]) {
+			largest = left;
+		}
+		if(right < n && array[right] > array[largest]) {
+			largest = right;
+		}
+		if(largest != i) {
+			int temp = array[i];
+			array[i] = array[largest];
+			array[largest] = temp;
+			maxheapify(array, n, largest);
+		}
+	}
+	public static void printMaxHeap(int [] array) {
+		int n = array.length;
+		
+		System.out.println("Max Heap: ");
+		for(int i=0;i<n;i++) {
+			System.out.print(array[i] + " ");
+		}	
+	}
+	public static void main(String[] args) {
+		int [] array = {3,6,36,1,00,100,196,56,53,10};
+		Sandesh_HeapSort hs = new Sandesh_HeapSort();
+		hs.maxHeap(array);
+		hs.printMaxHeap(array);
+//		maxHeap(array);
+//		printMaxHeap(array);
+	}
+
+}

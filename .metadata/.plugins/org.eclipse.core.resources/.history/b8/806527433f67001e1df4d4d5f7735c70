@@ -1,0 +1,33 @@
+package Sort;
+
+public class Sandesh_QuickSort {
+	public static void main(String[] args) {
+		int[] array = {45,56,23,423,6,1,0,3,2,5,6);
+		
+		System.out.println("Unsorted Array:");
+		printArray(array);
+		
+//		quickSort(array,)
+		quickSort(array,0,array.length - 1);
+		
+		System.out.println("Sorted Array:");
+		printArray(array);
+		}
+		public static int quickSort(int [] array, int low, int high ) {
+			if(low >= high)
+				return;
+			
+			int pivot = array[high];
+			
+			int leftP = partition(array, low, high, pivot);
+			
+			quickSort(array,low, leftPointer - 1);
+			quickSort(array, leftPointer + 1, highIndex);
+			 
+		}
+		
+		public static void printArray(int[] array) {
+			
+		}
+	}
+}

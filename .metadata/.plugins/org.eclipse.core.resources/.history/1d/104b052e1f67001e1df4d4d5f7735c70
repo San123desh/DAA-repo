@@ -1,0 +1,37 @@
+package binarySearch;
+
+public class Binary_Search {
+	
+	public static int binarySearch(int[] array, int target) {
+		int low = 0;
+		int high = array.length - 1;
+		
+		while(low <= high) {
+			int mid = (low + high)/2;
+			if(array[mid] == target) {
+				return mid;
+			}else if(array[mid] < target) {
+				low = mid + 1;
+			}else {
+				high = mid - 1;
+			}
+		}
+		return -1;
+	}
+
+	
+	
+	public static void main(String[] args) {
+		int[] array = {0, 1,5,6,7,8,9,10,24,35,64,67,789};
+		int target = 64;
+		int index = binarySearch(array, target);
+		
+		if(index != -1) {
+			System.out.println("The target element is found at index:" + index);
+		}else {
+			System.out.println("The target element is not found.");
+		}
+
+	}
+
+}

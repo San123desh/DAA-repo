@@ -1,0 +1,16 @@
+package Sort;
+
+public class Sandesh_QuickSort {
+
+	public static void main(String[] args) {
+		int[] array = {45,56,23,423,6,1,0,3,2,5,6);
+		System.out.println("Unsorted Array:");
+		printArray(array);
+		
+		quickSort(array,)
+		
+		System.out.println("Sorted Array:");
+		printArray(array);
+		}
+	}
+}

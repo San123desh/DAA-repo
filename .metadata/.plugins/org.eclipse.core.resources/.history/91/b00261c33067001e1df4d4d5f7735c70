@@ -1,0 +1,21 @@
+package Sort;
+
+public class Sandesh_MergeSort {
+	
+	public static void main(String[] args) {
+		int [ ] numbers = {34,54,65,24,3,625,165,765,25,3453};
+		
+		System.out.println("Before:");
+		printArray(numbers);
+		
+		System.out.println("\nAfter:");
+		printArray(numbers);
+	}
+
+	private static void printArray(int[] numbers) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+
+}

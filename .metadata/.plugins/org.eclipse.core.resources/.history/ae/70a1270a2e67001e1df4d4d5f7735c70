@@ -1,0 +1,24 @@
+package Sort;
+
+public class Sandesh_MergeSort {
+	
+	public static void conquer(int array[],int first,int last,int mid) {
+		int merged[] = new int ()
+	}
+
+	public static void divide(int array[], int first,int last) {
+		if(first >= last) {
+			return;
+		}
+		mid = (first + last )/2;
+		divide(array,first,mid);
+		divide(array,mid+1,last);
+	}
+	
+	public static void main(String[] args) {
+		int array[ ] = {9,88,2,3,6,4,4,1,7,2}
+		int n = array.length;
+
+	}
+
+}

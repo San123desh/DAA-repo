@@ -1,0 +1,21 @@
+package sorting;
+
+public class InsertionSort {
+
+	public static void main(String[] args) {
+		String [] fruits = {"apple", "banana", "grape", "cherry", "date"};
+		 System.out.println("The unsorted array is:");
+		 for (int i=0;i< fruits.length;i++) {
+			 System.out.print(fruits[i] + " ");
+		 }
+		 System.out.println();
+		 insertionSorting(fruits);
+		 System.out.println("The sorted array is:");
+		 for (int i=0;i< fruits.length;i++) {
+		 System.out.print(fruits[i] + " ");
+		 }
+		 }
+
+	}
+
+}

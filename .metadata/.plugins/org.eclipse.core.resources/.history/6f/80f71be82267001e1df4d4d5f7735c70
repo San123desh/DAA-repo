@@ -1,0 +1,19 @@
+package min_max;
+
+public class Sandesh_Min_Max {
+	public static void main(String[] args) {
+		int[] array = {4,6,7,3,5,25,58,74,31}
+		int min = array[0];
+		int max = array[0];
+		
+		for(int i = 1;i < array.length; i++) {
+			if(array[i]< min) 
+				min = array[i];
+			else if(array[i] > max)
+				max = array[i];
+		}
+		System.out.println("Minimum : " + min);
+		System.out.println("Maximum: " + max);
+	}
+
+}

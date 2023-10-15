@@ -1,0 +1,10 @@
+package orderStatistics_selection;
+
+public class Sandesh_median {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
